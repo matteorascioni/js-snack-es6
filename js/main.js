@@ -36,81 +36,60 @@ $(document).ready(function() {
     //     })
 
     //     console.log(newList);
-    
 
     // JS SNACK 3
-    const myObjectsArray = [
-        {
-            name: 'a',
-            colore: 'giallo',
-            altezza: 180,
-        },
-        {
-            name: 'b',      
-            colore:  'blu',
-            altezza: 150,
-        },
-        {
-            name: 'c',
-            colore:  'rosso',
-            altezza: 130,
-        },
-        {
-            name: 'd',
-            colore:  'nero',
-            altezza: 120,
-        },
-        {
-            name: 'e',
-            colore:  'arancione',
-            altezza: 100,
-        },
-        ];
+    // const myObjectsArray = [
+    //     {
+    //         name: 'a',
+    //         colore: 'giallo',
+    //         altezza: 180,
+    //     },
+    //     {
+    //         name: 'b',      
+    //         colore:  'blu',
+    //         altezza: 150,
+    //     },
+    //     {
+    //         name: 'c',
+    //         colore:  'rosso',
+    //         altezza: 130,
+    //     },
+    //     {
+    //         name: 'd',
+    //         colore:  'nero',
+    //         altezza: 120,
+    //     },
+    //     {
+    //         name: 'e',
+    //         colore:  'arancione',
+    //         altezza: 100,
+    //     },
+    //     ];
     
-        // COPIA DI UN ARRAY
-        const newArrayObj = [...myObjectsArray].map(person => {
-            return {
-                ...person, 
-                 position: genRandomPosition(),
-            }
-        });
+    //     // COPIA DI UN ARRAY
+    //     const newArrayObj = [...myObjectsArray].map(person => {
+    //         return {
+    //             ...person, 
+    //              position: genRandomPosition(),
+    //         }
+    //     });
 
-        console.table(myObjectsArray);
-        console.table(newArrayObj);
+    //     console.table(myObjectsArray);
+    //     console.table(newArrayObj);
     
-        // GEN RANDOM POSTION 
-        function genRandomPosition() {
-            var letters = 'abcdefghijklmnopqrstuvwxyz'
+    //     // GEN RANDOM POSTION 
+    //     function genRandomPosition() {
+    //         var letters = 'abcdefghijklmnopqrstuvwxyz'
     
-            var letter = letters[genRandomNumbers(0, letters.length - 1)];
+    //         var letter = letters[genRandomNumbers(0, letters.length - 1)];
     
-            return letter; 
-        }
+    //         return letter; 
+    //     }
     
-        // GEN RANDOM NUMBERS
-        function genRandomNumbers(min, max) {
-            return Math.floor( Math.random() * (max - min + 1) + min);
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //     // GEN RANDOM NUMBERS
+    //     function genRandomNumbers(min, max) {
+    //         return Math.floor( Math.random() * (max - min + 1) + min);
+    //     }
 });
 
 
